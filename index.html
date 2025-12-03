@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NGB-Sorteador de Números</title>
+  </head>
+  <body>
+    <main >
+      <img onclick="byeArticle()" src="./img/dado.png" alt="" />
+      <h1>NGBSorteador</h1>
+      <h2>Sortear um Número</h2>
+      <section>
+        <input type="number" class="input-min" placeholder="entre" />
+        <input type="number" class="input-max" placeholder="e" />
+      </section>
+      <button onclick="generateNumber()">Sortear</button>
+    </main>
+    <article>
+        <h3>O número sorteado é:</h3>
+        <h4></h4>
+    </article>
+  </body>
+  <script src="script.js"></script>
+</html>

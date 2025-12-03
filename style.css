@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: black;
+}
+
+main {
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   padding-top: 80px;
+   
+}
+
+img{
+    width: 500px;
+    cursor: pointer;
+}
+
+img:hover {
+    opacity: 0.9;
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35) ;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+h2 {
+    color: aliceblue;
+    font-size: 32px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+section {
+    display: flex;
+    gap: 62px;
+}
+
+input {
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 20px;
+    background: #404040; 
+    opacity: 0.7;  
+}
+
+button {
+    width: 342px;
+    height: 72px;
+    background: #AEC346;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    margin-top: 79px;
+    font-size: 36px;
+    font-weight: bold;
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35) ;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+article {
+    background: #404040;
+    width: 25vw;
+    height: 20vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    border-radius: 10px;
+    left: -930px;
+    transition: left 1s ease-in-out;
+    
+    
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+h4 {
+    color: black;
+    font-size: 74px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/*Media Query */
+@media (max-width: 900px) {
+
+    main {
+        display: block;
+        margin: 0 auto;
+        gap: 20px;
+        padding-top: 50px;
+    }
+
+    img {
+        width: 400px;
+        
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    input {
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    button {
+        margin-left: 10vw;
+    }
+
+    article {
+        width: 60vw;
+        height: 50vh;
+        opacity: 0.97;
+        position: fixed;
+    }
+}
